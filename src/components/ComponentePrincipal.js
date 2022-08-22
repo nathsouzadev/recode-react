@@ -7,6 +7,7 @@ const ComponentePrincipal = () => {
       <div>
         <Card conteudo='Alguma coisa'/>
         <Card conteudo='Outra coisa'/>
+        <Card />
       </div>
       <a href='#'>Link</a>
     </main>

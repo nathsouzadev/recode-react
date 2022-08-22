@@ -1,19 +1,22 @@
-import './App.css';
-import React from 'react';
-import ComponentePrincipal from './components/ComponentePrincipal'
-import Header from './components/Header'
+import { BrowserRouter } from "react-router-dom";
+import Header from './components/Header/Header'
 import Footer from './components/Footer'
+import { ContextProvider } from "./components/ContextProvider";
+import MainRoutes from './routes'
 
 function App() {
-  return (
-    <>
-      <Header />
-      <ComponentePrincipal />
-      <Footer valor='1'>
-        Recode 2022
-      </Footer>
-    </>
-  );
+
+  return(
+    <ContextProvider>
+      <BrowserRouter>
+        <Header />
+        <MainRoutes />
+        <Footer>
+          Recode 2022
+        </Footer>
+      </BrowserRouter>
+    </ContextProvider>
+  )
 }
 
 export default App;

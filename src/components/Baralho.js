@@ -15,7 +15,7 @@ const Baralho = () => {
 
     return(
         <h1>
-            {baralho}
+            { baralho }
         </h1>
     )
 }
